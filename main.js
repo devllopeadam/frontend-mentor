@@ -17,7 +17,7 @@ dismiss.onclick = () => dismissAndReturnToFormPage()
 
 
 function checkTheEmail() {
-    let re = /\w*@\w*.[a-z]{2,}/;
+    let re = /^\w*@\w*.[a-z]{2,3}$/;
     if (re.test(input.value)) {
         content.classList.add("remove");
         subscription.classList.remove("invalid")
